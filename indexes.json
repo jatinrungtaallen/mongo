@@ -1,0 +1,9 @@
+[
+  { "status": 1 },
+
+  { "customTags.tag_name": 1 },
+
+  { "taxonomyData.taxonomyId": 1, "taxonomyData.topicId": 1 },
+  
+  { "taxonomyData.taxonomyId": 1, "taxonomyData.subtopicId": 1 }
+]

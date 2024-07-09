@@ -1,0 +1,13 @@
+db.questions
+  .find({
+    customTags: { $elemMatch: { tag_name: 'Q-REEL', value: 'yes' } },
+    status: 2,
+    qnsLevel: 2,
+    taxonomyData: {
+      $elemMatch: {
+        taxonomyId: '1703061260BO',
+        subtopicId: { $in: ['1418', '664', '667', '1416'] },
+      },
+    },
+  })
+  .explain('executionStats');
